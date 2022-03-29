@@ -39,12 +39,15 @@ export const Actualidad = () => {
     const [stateInfoActualidad, setStateInfoActualidad] = useState({});
 
     useEffect(async () => {
+        
         const getInfo = async() => {
             const resp = await getInfoActualidad();
             setStateInfoActualidad(resp);
         }
         getInfo();
+
     }, []);
+
     return (
         <Container>
             <Titulo textColor="primary">Actualidad</Titulo>
@@ -56,7 +59,7 @@ export const Actualidad = () => {
                         <ContainerIconos>
                             {
                                 stateInfoActualidad.imagenes.map((logo, i) => (
-                                    <img key={i} src={logo} />
+                                    <img key={i} src={logo} alt="leguaje de programacion" />
                                 ))
                             }
                         </ContainerIconos>

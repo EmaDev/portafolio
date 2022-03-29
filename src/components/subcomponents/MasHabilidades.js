@@ -52,7 +52,7 @@ export const MasHabilidades = () => {
 
     const [stateHabilidades, setStateHabilidades] = useState([]);
 
-    useEffect( async() => {
+    useEffect( () => {
         const getHabilidades = async() => {
             const resp = await getHabilidadesExtra();
             setStateHabilidades(resp);
@@ -73,7 +73,7 @@ export const MasHabilidades = () => {
             {
                 stateHabilidades.map( icono => (
                     <Icono key={icono.nombre}>
-                        <img src={icono.source}/>
+                        <img src={icono.source} alt={icono.nombre}/>
                         <p>{icono.nombre}</p>
                     </Icono>
                 ))

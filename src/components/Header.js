@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import styled from '@emotion/styled';
 import { useMediaQuery } from 'react-responsive';
 
-import headerImage from '../assets/header-icon.svg';
+import headerImage from '../source/header-icon.svg';
 import { DeslizaPorMas } from './subcomponents/DeslizaPorMas';
 
 const Container = styled.div`
@@ -36,12 +36,7 @@ const ContainerBigScreen = styled.div`
    justify-content: center;
    align-itmes: center;
 `;
-const AdaptadorTamano = styled.div`
-   background-color: blue;
-   height: 100%;
-   width: 50%;
-   position: relative;
-`;
+
 const ContenidoBigScreen = styled.div`
    width: 90%;
    margin: auto;
@@ -102,7 +97,7 @@ export const Header = () => {
                                             </h1>
                                         }
                                     </div>
-                                    <ImagenBigScreen src={headerImage}/>
+                                    <ImagenBigScreen src={headerImage} alt="logo-programador"/>
                                 </ContenidoBigScreen>
                                 
                             
@@ -124,7 +119,7 @@ export const Header = () => {
                                 }
                             </ContainerTextos>
                             <ContainerImage>
-                                <img src={headerImage} />
+                                <img src={headerImage} alt="logo-programador"/>
                             </ContainerImage>
 
                             <DeslizaPorMas color="secondary" />

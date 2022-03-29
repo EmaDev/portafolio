@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
@@ -78,7 +78,7 @@ const ListaBotones = styled.div`
 export const ItemCarousel = ({ img, data, item1 }) => {
 
     const [mostrarInfo, setMostrarInfo] = useState(true);
-    const {nombre, descripcion, descBreve} = data;
+    const {nombre, descripcion} = data;
 
     return (
         <Container>
@@ -106,7 +106,7 @@ export const ItemCarousel = ({ img, data, item1 }) => {
                     }
                 </>
             }
-            <img src={img} />
+            <img src={img} alt={nombre} />
         </Container>
     )
 }

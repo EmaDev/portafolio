@@ -1,6 +1,4 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import { DeslizaPorMas } from './subcomponents/DeslizaPorMas';
 
 const Seccion = styled.section`
    background-color: ${props => `var(--${props.bgColor})`};

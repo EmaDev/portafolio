@@ -26,7 +26,7 @@ export const ItemHabilidad = ({src, nombre}) => {
     
     return (
     <Container onClick={toggleIcon}>
-        <img src={src} style={{width: '70px', height: '70px'}}/>
+        <img src={src} style={{width: '70px', height: '70px'}} alt={nombre}/>
         <p ref={textoRef} className='ocultar'>{nombre}</p>
     </Container>
   )

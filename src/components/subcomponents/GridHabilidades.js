@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { ItemHabilidad } from './ItemHabilidad';
 
-const Iconos = require.context('../../assets/iconos', true);
+const Iconos = require.context('../../source/iconos', true);
 
 const Container = styled.div`
    width: 90%;
