@@ -7,7 +7,7 @@ import { Loading } from '../Loading';
 const Container = styled.div`
    width: 90%;
    max-width: 800px;
-   height: 70vh;
+   min-height: 70vh;
    background-color: var(--backgroundSecondary);
    margin: auto;
    border-radius: 6px;

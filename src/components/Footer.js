@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import {AiFillGithub, AiOutlineInstagram} from 'react-icons/ai';
+import {AiFillGithub, AiFillLinkedin} from 'react-icons/ai';
 
 const Container = styled.div`
   padding: 3rem 1rem;
@@ -39,15 +39,22 @@ const Copyright = styled.p`
 `;
 
 export const Footer = () => {
+
+  const getAnoActual = () => {
+    const fecha = new Date;
+
+    return fecha.getFullYear();
+  }
+  getAnoActual();
   return (
     <Container>
 
         <IconosContacto>
             <a href='https://github.com/EmaDev' target="_blank"><AiFillGithub size="6rem" color="white"/></a>
-            <a href='https://www.instagram.com/emacisterna/' target='_blank'><AiOutlineInstagram size="6rem" color="white"/></a>
+            <a href='https://www.linkedin.com/in/emanuel-cisterna-26a9691b3/' target='_blank'><AiFillLinkedin size="6rem" color="white"/></a>
         </IconosContacto>
         <Texto>Creado con <span>❤️</span> por Emanuel Cisterna</Texto>
-        <Copyright>Todos los derechos reservados 2022 © </Copyright>
+        <Copyright>Todos los derechos reservados {getAnoActual()} © </Copyright>
     </Container>
   )
 }

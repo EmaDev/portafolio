@@ -23,11 +23,12 @@ const teconologias = [
     {icono: 'html-icon', nombre: 'HTML 5'},
     {icono: 'css-icon', nombre: 'CSS 3'},
     {icono: 'node-icon', nombre: 'Node JS'},
-    {icono: 'npm-icon', nombre: 'NPM'},
+    {icono: 'git-icon', nombre: 'Git'},
     {icono: 'pwa-icon', nombre: 'Progresive Web App'},
     {icono: 'mysql-icon', nombre: 'SQL DataBase'},
     {icono: 'firebase-icon', nombre: 'Firebase Cloud'},
-    {icono: 'git-icon', nombre: 'Git'},
+    {icono: 'mongo-icon', nombre: 'Mongo DB'}
+    
 ];
 
 export const GridHabilidades = () => {

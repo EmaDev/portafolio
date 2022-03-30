@@ -36,9 +36,11 @@ const Titulo = styled.h3`
 `;
 const Descripcion = styled.div`
    margin:auto;
-   height: 60%;
    overflow-y: auto;
+   height: 65%;
    width: 95%;
+   padding-bottom: 3rem;
+   
    p{
     margin: auto;
     width: 95%;
@@ -78,7 +80,7 @@ const ListaBotones = styled.div`
 export const ItemCarousel = ({ img, data, item1 }) => {
 
     const [mostrarInfo, setMostrarInfo] = useState(true);
-    const {nombre, descripcion} = data;
+    const { nombre, descripcion } = data;
 
     return (
         <Container>
@@ -92,11 +94,12 @@ export const ItemCarousel = ({ img, data, item1 }) => {
                                     <Titulo>{nombre}</Titulo>
                                     <Descripcion>
                                         <p>{descripcion}</p>
+                                        <div></div>
                                     </Descripcion>
                                 </ContainerInfo>
                                 <ListaBotones>
-                                    <BotonOcultar onClick={() => { }}>Visitar sitio web</BotonOcultar>
-                                    <BotonOcultar onClick={() => setMostrarInfo(false)}>ocultar info</BotonOcultar>
+                                    <BotonOcultar onClick={ () => {window.location.assign("https://www.delftstack.com");} }>Visitar Web</BotonOcultar>
+                                    <BotonOcultar onClick={() => setMostrarInfo(false)}>Ocultar info</BotonOcultar>
                                 </ListaBotones>
                             </>
                             :
