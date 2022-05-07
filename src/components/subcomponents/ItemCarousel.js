@@ -80,8 +80,7 @@ const ListaBotones = styled.div`
 export const ItemCarousel = ({ img, data, item1 }) => {
 
     const [mostrarInfo, setMostrarInfo] = useState(true);
-    const { nombre, descripcion } = data;
-
+    const { nombre, descripcion, url } = data;
     return (
         <Container>
             {
@@ -98,7 +97,7 @@ export const ItemCarousel = ({ img, data, item1 }) => {
                                     </Descripcion>
                                 </ContainerInfo>
                                 <ListaBotones>
-                                    <BotonOcultar onClick={ () => {window.location.assign("https://www.delftstack.com");} }>Visitar Web</BotonOcultar>
+                                    <BotonOcultar onClick={ () => {window.location.assign(url);} }>Visitar Web</BotonOcultar>
                                     <BotonOcultar onClick={() => setMostrarInfo(false)}>Ocultar info</BotonOcultar>
                                 </ListaBotones>
                             </>

@@ -50,7 +50,5 @@ export const getHabilidadesExtra = async() => {
     }
 }
 
-export const nuevo = () => {
-    console.log('culii')
-};
+
 

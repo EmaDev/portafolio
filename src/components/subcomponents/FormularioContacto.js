@@ -39,9 +39,9 @@ const BotonSubmit = styled.input`
 
 export const FormularioContacto = () => {
 
-  const [formValues, setFormValues] = useState({nombre: '', email: '',mensaje: ''});
+  const [formValues, setFormValues] = useState({name: '', email: '',message: ''});
   
-  const {nombre, email, mensaje} = formValues;
+  const {name, email, message} = formValues;
 
   const onInputStateChange = ({target}) => {
       
@@ -51,13 +51,12 @@ export const FormularioContacto = () => {
     });
   }
   return (
-    <Formulario>
-
+    <Formulario action="https://formsubmit.co/emanuel00developer@gmail.com" method="POST">
         <Input
         type="text"
         placeholder='Nombre'
-        name='nombre'
-        value={nombre}
+        name='name'
+        value={name}
         onChange={onInputStateChange}
         />
         <Input
@@ -68,8 +67,8 @@ export const FormularioContacto = () => {
         onChange={onInputStateChange}
         />
         <TextArea placeholder='Mensaje'
-        name="mensaje"
-        value={mensaje}
+        name="message"
+        value={message}
         onChange={onInputStateChange}
         />
         <BotonSubmit type="submit" value="Enviar mensaje"/>
