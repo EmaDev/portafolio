@@ -51,7 +51,6 @@ export const Actualidad = () => {
     return (
         <Container>
             <Titulo textColor="primary">Actualidad</Titulo>
-            <h1>Hello world</h1>
             {
                 (Object.keys(stateInfoActualidad).length != 0) ?
                     <>
